@@ -1,0 +1,82 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b6d484;
+}
+
+.head {
+    width: 200px;
+    height: 200px;
+    background-color: #CB6F40;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.eyes{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    position: absolute;
+    top: 60px;
+}
+
+.eye{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.mouth_container {
+    width: 118px;
+    height: 90px;
+    background-color: #FBAA61;
+    border-radius: 100%;
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.nose {
+    width: 50px;
+    height: 50px;
+    background-color: #5D3214;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.mouth {
+    width: 80px;
+    height: 30px;
+    border-top: none;
+    border-bottom: 8px solid #5D3214;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.mouth::after {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background-color: #5D3214;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
