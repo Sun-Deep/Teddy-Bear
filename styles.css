@@ -112,7 +112,7 @@ body{
 }
 
 .hand {
-    width: 100px;
+    width: 110px;
     height: 300px;
     background-color: #B0632F;
     transform: rotate(40deg);
@@ -133,7 +133,7 @@ body{
 
 .leg {
     width: 100px;
-    height: 100px;
+    height: 110px;
     border-radius: 100%;
     background-color: #C8713B;
     position: absolute;
@@ -147,18 +147,21 @@ body{
 
 .foot {
     width: 100px;
-    height: 100px;
+    height: 110px;
     background-color: #FAAA61;
-    border-radius: 90px;
-    margin-top: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 
 .leg:first-child .foot {
-    margin-left: -10px;
+    /* margin-left: 10px; */
+    transform: rotate(-20deg);
 }
 
 .leg:last-child .foot {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    transform: rotate(20deg);
+
 }
 
 
