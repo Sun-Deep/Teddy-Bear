@@ -92,6 +92,18 @@ body{
     position: relative;
 }
 
+.body::before{
+    content: '';
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    background-color: #CE7033;
+    z-index: -1;
+    bottom: -12px;
+}
+
 .hands {
     display: flex;
     justify-content: center;
@@ -112,5 +124,41 @@ body{
     transform: rotate(-40deg);
 }
 
+.legs {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.leg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #C8713B;
+    position: absolute;
+    left: -20px;
+}
+
+.leg:last-child{
+    left: initial;
+    right: -20px;
+}
+
+.foot {
+    width: 100px;
+    height: 100px;
+    background-color: #FAAA61;
+    border-radius: 90px;
+    margin-top: 10px;
+}
+
+.leg:first-child .foot {
+    margin-left: -10px;
+}
+
+.leg:last-child .foot {
+    margin-left: 10px;
+}
 
 
