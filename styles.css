@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6d484;
+    background-color: #f2d95e;
     flex-direction: column;
 }
 
@@ -38,6 +38,13 @@ body{
     height: 20px;
     background-color: black;
     border-radius: 100%;
+    animation: 1s infinite blink;
+}
+
+@keyframes blink {
+    20%{
+        transform: scaleY(0.2);
+    }
 }
 
 .mouth_container {
@@ -154,14 +161,51 @@ body{
 }
 
 .leg:first-child .foot {
-    /* margin-left: 10px; */
     transform: rotate(-20deg);
 }
 
 .leg:last-child .foot {
-    /* margin-left: 10px; */
     transform: rotate(20deg);
+}
 
+.ears{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    top: 23%;
+}
+
+.ear {
+    width: 100px;
+    height: 50px;
+    background-color: #F8A95E;
+    border: 10px solid #B5602D;
+    border-radius: 100%;
+    transform: rotate(45deg);
+}
+
+.ear:first-child{
+    animation: 1s infinite wave-ear-one;
+}
+
+.ear:last-child{
+    transform: rotate(-45deg);
+    animation: 1s infinite wave-ear-two;
+
+
+}
+
+@keyframes wave-ear-one {
+    50% {
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes wave-ear-two {
+    50% {
+        transform: rotate(-70deg);
+    }
 }
 
 
