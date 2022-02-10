@@ -5,12 +5,13 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #b6d484;
+    flex-direction: column;
 }
 
 .head {
@@ -21,6 +22,7 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
 .eyes{
@@ -76,6 +78,38 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.body{
+    width: 200px;
+    height: 250px;
+    background-color: #FAAA61;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-top: -50px;
+    position: relative;
+}
+
+.hands {
+    display: flex;
+    justify-content: center;
+    margin: -80px;
+    z-index: -3;
+}
+
+.hand {
+    width: 100px;
+    height: 300px;
+    background-color: #B0632F;
+    transform: rotate(40deg);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hand:last-child{
+    transform: rotate(-40deg);
 }
 
 
